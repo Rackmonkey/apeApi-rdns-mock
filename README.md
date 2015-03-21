@@ -1,6 +1,5 @@
 # apeControl Reverse DNS Api
-This api is modelled after the ![hetzner rdns api][1].
-
+This api is modelled after the [hetzner rdns api][1].
 
 ## Routes
 
@@ -54,8 +53,8 @@ Returns the current set rdns record.
 | 404    | IP_NOT_FOUND                 |
 | 404    | RDNS_NOT_FOUND               |
 
-#### [POST]
-Set a rdns record.
+#### [POST] / [PUT]
+Set or update a rdns record.
 
 ##### Example Request
 ```javascript
