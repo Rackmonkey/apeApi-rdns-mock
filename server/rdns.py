@@ -37,5 +37,5 @@ class rdns(Base):
     allowed = re.compile("(?!-)[A-Z\d-]{1,63}(?<!-)$", re.IGNORECASE)
     return all(allowed.match(x) for x in hostname.split("."))
 
-  def __json__(self):
+  def __dict__(self):
     return {'rdns': {'ip': self.ip, 'ptr': self.ptr}}
