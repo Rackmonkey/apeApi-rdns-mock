@@ -18,5 +18,5 @@ $ ./app.py
 
 ## save added dependencies
 ```
-$ pip freeze
+$ pip freeze > requirements.txt
 ```
